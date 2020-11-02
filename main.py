@@ -33,7 +33,7 @@ if __name__ == "__main__":
             query_ys_s.append(pickle.load(open("{}/warm_state/query_y_{}.pkl".format(master_path, idx), "rb")))
         total_dataset = list(zip(supp_xs_s, supp_ys_s, query_xs_s, query_ys_s))
         del(supp_xs_s, supp_ys_s, query_xs_s, query_ys_s)
-        training(melu, total_dataset, batch_size=config['batch_size'], num_epoch=config['num_epoch'], model_save=True, model_filename=model_filename)
+        training(melu, total_dataset, batch_size=config['batch_size'], num_epoch=config['num_epoch'], model_save=False, model_filename=model_filename)
     else:
         trained_state_dict = torch.load(model_filename)
         melu.load_state_dict(trained_state_dict)

@@ -13,11 +13,11 @@ config = {
     'num_occupation': 21,
     'num_zipcode': 3402,
     # cuda setting
-    'use_cuda': True,
+    'use_cuda': False,
     # model setting
     'inner': 1,
-    'lr': 5e-5,
-    'local_lr': 5e-6,
+    'lr': 5e-3,
+    'local_lr': 5e-2,
     'batch_size': 32,
     'num_epoch': 20,
     # candidate selection
