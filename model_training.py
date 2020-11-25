@@ -69,7 +69,7 @@ def training(melu, total_dataset, eval_dataset, batch_size, num_epoch, model_sav
     print('logged data shape', losses.shape)
     master_path= "./ml"
     np.save(
-        "{}/result/melu_traink_{}_learnlr_{}_aug_{}_cf_{}_inner_{}".format(
+        "{}/result/melu_traink_{}_learnlr_{}_aug_{}_cf_{}_inner_{}_finetune80".format(
             master_path, config["train_k"], config["learn_local_lr"], config["enable_data_aug"], config["include_item_embeddings"], config["inner"]
         ),
         losses

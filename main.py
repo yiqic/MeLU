@@ -220,7 +220,7 @@ def run_baseline():
     losses = np.array([train_losses, val_losses])
     print('logged data shape', losses.shape)
     np.save(
-        "{}/result/baseline_cf_{}".format(master_path, config["include_item_embeddings"]),
+        "{}/result/baseline_cf_{}_finetune80".format(master_path, config["include_item_embeddings"]),
         losses
     )
 

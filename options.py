@@ -19,12 +19,12 @@ config = {
     'lr': 5e-3,
     'local_lr': 5e-3,
     'learn_local_lr': True,
-    'batch_size': 64,
-    'num_epoch': 10,
+    'batch_size': 32,
+    'num_epoch': 3,
     # candidate selection
     'num_candidate': 20,
     'include_item_embeddings': True,
-    'tests_per_epoch': 20,
+    'tests_per_epoch': 80,
     'enable_data_aug': False,
     'train_k': 5,
 }
